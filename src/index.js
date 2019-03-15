@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //app is what is being rendered
-import App from './App';
+import App from './components/App/App';
 //service worker gets app to load faster 
 import * as serviceWorker from './serviceWorker';
 
