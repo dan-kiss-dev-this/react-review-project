@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
+import SeriesList from '../../components/SeriesList/index';
 
 class Series extends Component {
     state = {
@@ -18,6 +19,7 @@ class Series extends Component {
         return (
             <div>
                 <div>Length of series array is {this.state.series.length}</div>
+                <SeriesList list={this.state.series}/>
             </div>
         );
     }
