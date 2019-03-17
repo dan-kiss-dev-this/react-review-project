@@ -1,9 +1,8 @@
 ![Home](/public/home.png?raw=true "home")
-###Home
-![Loading](/public/Loading.png?raw=true "loading")
-###Loading
+![Loading](/public/loading.png?raw=true "loading")
 ![Final](/public/final.png?raw=true "final")
-###Final Page
+
+Home, Loading and Final Pages
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
