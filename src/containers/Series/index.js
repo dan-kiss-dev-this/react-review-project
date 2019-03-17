@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
 import SeriesList from '../../components/SeriesList/index';
+import Loader from '../../components/Loader/';
 
 class Series extends Component {
     state = {
@@ -29,9 +30,9 @@ class Series extends Component {
                     type='text' 
                     onChange={this.onSeriesInputChange} />
                 </div>
-                { series.length === 0 && seriesName.trim() === '' && <p>Enter series name</p>}
-                { series.length === 0 && seriesName.trim() !== ''  && <p>No TV series found</p>}
-                { isFetching && <p>Loading</p> }
+                { !isFetching && series.length === 0 && seriesName.trim() === '' && <p>Enter series name</p>}
+                { !isFetching && series.length === 0 && seriesName.trim() !== ''  && <p>No TV series found</p>}
+                { isFetching && <Loader /> }
                 { !isFetching && <SeriesList list={this.state.series}/> }
                 
             </div>
