@@ -1,3 +1,10 @@
+![Home](/public/home.png?raw=true "home")
+###Home
+![Loading](/public/Loading.png?raw=true "loading")
+###Loading
+![Final](/public/final.png?raw=true "final")
+###Final Page
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
