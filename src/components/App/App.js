@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Intro from '../Intro/intro';
-import Series from '../../containers/Series/index'
+import Main from '../Main/index'
 
 class App extends Component {
 
@@ -11,9 +10,7 @@ class App extends Component {
         <header className="App-header">
           <h1>TV series list</h1>
         </header>
-        <Intro message='Here are your fav series'/>
-        
-        <Series />
+        <Main />
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import 'whatwg-fetch';
 import SeriesList from '../../components/SeriesList/index';
 import Loader from '../../components/Loader/';
+import Intro from '../../components/Intro/intro';
 
 class Series extends Component {
     state = {
@@ -24,6 +25,7 @@ class Series extends Component {
 
         return (
             <div>
+                <Intro message='Here are your fav series'/>
                 <div>
                     <input 
                     value={seriesName}

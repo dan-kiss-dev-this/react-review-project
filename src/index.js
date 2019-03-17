@@ -6,6 +6,7 @@ import './index.css';
 import App from './components/App/App';
 //service worker gets app to load faster 
 import * as serviceWorker from './serviceWorker';
+import { BrowserRouter } from 'react-router-dom';
 
 
 // const getCurrentDate = () => {
@@ -21,7 +22,9 @@ import * as serviceWorker from './serviceWorker';
 // ReactDOM.render(greeting, document.getElementById('root'));
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<BrowserRouter> 
+    <App /> 
+</BrowserRouter>, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
